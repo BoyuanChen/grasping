@@ -31,7 +31,7 @@ $: python prepare_meshes.py
 * Run initialize/prepare_candidates.py. This will read the pose information collected by V-REP, and generate a list of candidates for each object that will be tested in the simulator. Note that these candidates will be saved under collect/candidates
 ```unix
 $: cd initialize
-$: cat ../data/initial_poses.txt | parallel python prepare_meshes.py
+$: cat ../data/initial_poses.txt | parallel python prepare_candidates.py
 ```
 * Once the candidates have been generated, you can either run each of them manually through the simulation, or create a "commands" file that will continuously all of them through the simulator. These commands will be saved under collect/commands
 ```unix
